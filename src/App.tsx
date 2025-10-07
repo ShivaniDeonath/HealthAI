@@ -9,6 +9,7 @@ import Survey from "./pages/Survey";
 import Dashboard from "./pages/Dashboard";
 import Chatbot from "./pages/Chatbot";
 import NotFound from "./pages/NotFound";
+import FloatingChatbot from "./components/FloatingChatbot";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <FloatingChatbot />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

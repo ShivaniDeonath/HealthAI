@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Trust & Health - Primary Blue Palette */
+    /* Trust & Health - Enhanced Palette */
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
 
@@ -18,26 +18,26 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* Trust Blue - Primary */
-    --primary: 217 91% 60%;
+    /* Medical Blue - Primary */
+    --primary: 213 94% 58%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 217 91% 55%;
+    --primary-hover: 213 94% 52%;
     
-    /* Wellness Green - Secondary */
-    --secondary: 158 64% 52%;
+    /* Healing Green - Secondary */
+    --secondary: 152 69% 48%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 158 64% 47%;
+    --secondary-hover: 152 69% 42%;
 
     /* Neutral Tones */
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 217 91% 60%;
+    --accent: 213 100% 96%;
+    --accent-foreground: 213 94% 58%;
 
     /* Emergency Alert */
-    --destructive: 0 84% 60%;
-    --emergency: 14 100% 57%;
+    --destructive: 0 72% 51%;
+    --emergency: 12 100% 50%;
     --emergency-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
@@ -48,15 +48,15 @@ All colors MUST be HSL.
     --radius: 0.75rem;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(217 91% 70%) 100%);
-    --gradient-wellness: linear-gradient(135deg, hsl(158 64% 52%) 0%, hsl(158 64% 62%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(158 64% 52%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 58%) 0%, hsl(213 94% 68%) 100%);
+    --gradient-wellness: linear-gradient(135deg, hsl(152 69% 48%) 0%, hsl(152 69% 58%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(213 94% 58%) 0%, hsl(152 69% 48%) 100%);
     
     /* Shadows */
-    --shadow-soft: 0 2px 8px -2px hsl(217 91% 60% / 0.15);
-    --shadow-medium: 0 4px 16px -4px hsl(217 91% 60% / 0.2);
-    --shadow-large: 0 12px 32px -8px hsl(217 91% 60% / 0.25);
-    --shadow-glow: 0 0 24px hsl(217 91% 60% / 0.3);
+    --shadow-soft: 0 2px 8px -2px hsl(213 94% 58% / 0.15);
+    --shadow-medium: 0 4px 16px -4px hsl(213 94% 58% / 0.2);
+    --shadow-large: 0 12px 32px -8px hsl(213 94% 58% / 0.25);
+    --shadow-glow: 0 0 30px hsl(152 69% 48% / 0.4);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -89,22 +89,22 @@ All colors MUST be HSL.
     --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%;
+    --primary: 213 94% 58%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 217 91% 55%;
+    --primary-hover: 213 94% 52%;
 
-    --secondary: 158 64% 52%;
+    --secondary: 152 69% 48%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 158 64% 47%;
+    --secondary-hover: 152 69% 42%;
 
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
 
     --accent: 217 33% 17%;
-    --accent-foreground: 217 91% 60%;
+    --accent-foreground: 213 94% 58%;
 
-    --destructive: 0 63% 31%;
-    --emergency: 14 100% 57%;
+    --destructive: 0 72% 51%;
+    --emergency: 12 100% 50%;
     --emergency-foreground: 0 0% 100%;
 
     --border: 217 33% 17%;

@@ -1,12 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { Activity, Shield, Users, Heart, ChevronRight, Sparkles } from "lucide-react";
+import { Activity, Shield, Users, Heart, ChevronRight, Sparkles, Phone } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const navigate = useNavigate();
 
+  const handleEmergencyCall = () => {
+    window.location.href = "tel:112";
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/20">
+      <Navbar />
+      
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-6xl mx-auto">
@@ -32,15 +40,28 @@ const Index = () => {
 
           {/* CTA Buttons */}
           <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center">
-            {/* Emergency Button - Prominent & Animated */}
+            {/* Call 112 Emergency Button */}
             <Button
-              onClick={() => navigate("/chatbot?emergency=true")}
+              onClick={handleEmergencyCall}
               size="lg"
               className="h-16 px-10 text-lg font-semibold bg-emergency hover:bg-emergency/90 text-emergency-foreground shadow-glow animate-emergency-pulse group relative overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-3">
-                <Activity className="h-6 w-6 animate-pulse" />
-                Emergency Assistance
+                <Phone className="h-6 w-6 animate-pulse" />
+                Call 112 Emergency
+                <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Button>
+
+            {/* Emergency Chatbot Assistance */}
+            <Button
+              onClick={() => navigate("/chatbot?emergency=true")}
+              size="lg"
+              className="h-16 px-10 text-lg font-semibold bg-destructive hover:bg-destructive/90 text-white shadow-medium group"
+            >
+              <span className="flex items-center gap-3">
+                <Activity className="h-6 w-6" />
+                Emergency Chat
                 <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </Button>
@@ -122,6 +143,8 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
